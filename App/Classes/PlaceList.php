@@ -62,7 +62,7 @@ class PlaceList {
                 $distance = $this->getDistanceBetweenPlaces($place, $otherPlace);
                 $res[] = [
                     "name" => $otherPlace->name,
-                    "distance" => $distance,
+                    "distance" => round($distance,2),
                 ];
             }
         }
